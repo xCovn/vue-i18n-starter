@@ -1,0 +1,114 @@
+// general styling stuff
+@import "variables";
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: $bodyColor;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: inherit;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: inherit;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1300px;
+  }
+}
+
+// component transition
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .1s ease;
+}
+
+.component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
+}
+
+.full-width-bar {
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background: $bg-color;
+}
+
+h1 {
+  color: $primary;
+}
+
+.Cookie {
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-demo {
+  @at-root {
+    button#{&}{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+      text-decoration: none;
+      border: 2px solid $bodyColor;
+      text-align: center;
+      position: relative;
+      transition: all 0.35s;
+      background-color: white;
+      color: $bodyColor;
+      border-radius: 0;
+    }
+
+    button#{&} span{
+      position: relative;
+      z-index: 2;
+    }
+
+    button#{&}:after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-image: linear-gradient(to right bottom, #ff7400, #fd8b00, #faa100, #f5b600, #efca08);
+      transition: all .35s;
+    }
+
+    button#{&}:hover{
+      color: $white;
+      text-decoration: none;
+    }
+
+    button#{&}:hover:after{
+      width: 100%;
+    }
+  }
+}

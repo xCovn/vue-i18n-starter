@@ -1,0 +1,37 @@
+/*========================================================
+        COLORS
+=========================================================*/
+
+$primary: #d90429;
+$success: #95C11E;
+$danger: #CC2936;
+$warning: #ffae00;
+$bodyColor: #4a4949;
+$bg-color: #2b2d42;
+$white: #fff;
+$black: #000000;
+
+
+.color-primary {
+  color: $primary;
+}
+
+.color-success {
+  color: $success;
+}
+
+.color-danger {
+  color: $danger;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-black {
+  color: $black;
+}
+
+.color-bodyColor {
+  color: $bodyColor;
+}
