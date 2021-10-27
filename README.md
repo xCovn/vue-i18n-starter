@@ -1,4 +1,4 @@
-# xCovn's Vue Demo Page
+# xCovn's Vue i18n starter page
 
 ## Project setup
 ```
@@ -20,5 +20,9 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### For github pages push
+``` 
+git add dist 
+git commit -m 'adding dist subtree'
+git subtree push --prefix dist origin gh-pages
+```
