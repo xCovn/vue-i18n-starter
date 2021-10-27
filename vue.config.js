@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath: process.env.NODE_ENV === 'production' ? '/xCovn.github.io-vue-18n-starter/' : '/',
     runtimeCompiler: true,
     chainWebpack: config => {
         config.module
