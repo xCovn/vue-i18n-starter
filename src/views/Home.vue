@@ -34,7 +34,7 @@ export default {
     },
     metaInfo() {
         return {
-            title: this.$t('Page.Home'),
+            title: this.$t('Demo.Home'),
             meta: [
                 {name: 'description', content: this.$t('MetaDescription.Home')}
             ],

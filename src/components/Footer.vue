@@ -8,16 +8,14 @@
                         <b-col cols="12" class="pt-5 pt-md-3">
                             <b-row>
                                 <b-col cols="12" sm="5">
-                                    <p>Copyright xCovn - All Rights Reserved</p>
+                                    <p>All Rights Reserved</p>
                                 </b-col>
 
                                 <b-col cols="12" sm="7">
                                     <div class="footer-nav float-right">
-                                        <router-link :to="{ name: 'demo1', params: { locale: this.$i18n.locale }}">{{$t('Demo.Link1')}}</router-link>
                                         <router-link :to="{ name: 'imprint', params: { locale: this.$i18n.locale }}">{{ $t('Demo.Imprint') }}</router-link>
                                         <router-link :to="{ name: 'privacy', params: { locale: this.$i18n.locale }}">{{ $t('Demo.Privacy') }}</router-link>
                                     </div>
-
                                 </b-col>
                             </b-row>
                         </b-col>

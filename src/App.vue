@@ -8,7 +8,7 @@
             </b-col>
         </b-row>
 
-        <cookie-law v-on:accept="consentMatomo()" :buttonText="$t('Button.Accept')" :message="$t('Demo.CookieText')">
+        <cookie-law v-on:accept="consentMatomo()" :buttonText="$t('Demo.BtnAccept')" :message="$t('Demo.CookieText')">
           <div slot="props">
               <router-link :to="{ name: 'privacy', params: { locale: this.$i18n.locale }}">{{ $t('Page.Privacy') }}</router-link>
           </div>
@@ -32,7 +32,7 @@ export default {
     metaInfo() {
         return {
             title: 'Default Title',
-            titleTemplate: '%s | ' + this.$t('Page.Home')
+            titleTemplate: '%s | ' + this.$t('Demo.Starter')
         }
     },
     data() {
